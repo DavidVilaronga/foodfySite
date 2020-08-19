@@ -1,0 +1,17 @@
+{%extends "layout.njk"%}
+
+{% block content %}
+
+<div class="content-chefs">
+    {% for chef in chefs %}
+    <div class="item-chefs">
+            <img src="{{chef.avatar_url}}" alt="asinhas">
+        <div>
+            <h1>{{chef.name}}</h1>
+            <h2>{{chef.total_recipes}} receitas</h2>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
